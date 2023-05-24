@@ -1,0 +1,45 @@
+body{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+div{
+    padding: 10px;
+    /* text-align: center; */
+    background-color: black;
+    color: white;
+    height: 480px;
+    width: 350px;
+    border: 2px solid black;
+}
+table{
+    border : 2px solid black;
+    border-collapse: collapse;
+
+}
+
+button,input{
+    width: 100%;
+    padding: 10px;
+}
+p{
+    visibility: hidden;
+}
+h2,h3{
+    text-align: center;
+}
+th{
+    color: white;
+    background-color: black;
+}
+tr{
+    color: white;
+    background-color: rgb(29, 109, 14);
+}
+td{
+    height: 50px;
+    width: 300px;
+    border: 2px solid black;
+    
+}
