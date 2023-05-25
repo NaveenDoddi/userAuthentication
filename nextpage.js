@@ -8,7 +8,7 @@ if(sessionStorage.getItem("token") != token){
 function load(){
 
     var userdata = JSON.parse(sessionStorage.getItem("user"))
-    document.getElementById("welcome").innerText ="Wellcome "+userdata.name+" !"
+    document.getElementById("welcome").innerText ="Welcome "+userdata.name+" !"
     document.getElementById("name").innerText = userdata.name
     document.getElementById("Gender").innerText = userdata.Gender
     document.getElementById("DOB").innerText = userdata.DOB

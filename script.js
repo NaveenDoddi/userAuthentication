@@ -20,7 +20,6 @@ let person = [
   },
   
 ]
-
 function run(){
 
   var username = document.getElementById("name").value
