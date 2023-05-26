@@ -1,3 +1,9 @@
+const urlParams = new URLSearchParams(window.location.search)
+const token = urlParams.get('token')
+
+if(sessionStorage.getItem("token") != token){
+    window.location.href = "index.html"
+}
 
 function load(){
 
