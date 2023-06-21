@@ -1,12 +1,13 @@
-const urlParams = new URLSearchParams(window.location.search)
-const token = urlParams.get('token')
-
-if(sessionStorage.getItem("token") != token){
-    window.location.href = "index.html"
+if(sessionStorage.getItem("token") == "home"){
+    window.location.pathName = "nextpage.html"
+   
+}else{
+    window.location.pathName = "index.html"
+    console.log("thank u")
 }
 
 function load(){
-
+    
     var userdata = JSON.parse(sessionStorage.getItem("user"))
     document.getElementById("welcome").innerText ="Welcome "+userdata.name+" !"
     document.getElementById("name").innerText = userdata.name

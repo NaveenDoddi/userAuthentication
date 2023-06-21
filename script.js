@@ -26,9 +26,8 @@ function run(){
   var password = document.getElementById("pass").value
   console.log(username)
 
-  const token = "home"
-  sessionStorage.setItem('token', token);
-  const nextPageUrl = 'nextpage.html?token=' + token
+  sessionStorage.setItem('token', "home");
+  const nextPageUrl = 'nextpage.html'
 
   person.forEach((i)=> i.username == username ? i.password == password ? sessionStorage.setItem("user",JSON.stringify(i)) + (window.location.href = nextPageUrl):"":"")
   if(person.some((i)=> i.username == username ? i.password == password :"")){
