@@ -7,7 +7,6 @@ if(sessionStorage.getItem("token") == "home"){
 }
 
 function load(){
-    
     var userdata = JSON.parse(sessionStorage.getItem("user"))
     document.getElementById("welcome").innerText ="Welcome "+userdata.name+" !"
     document.getElementById("name").innerText = userdata.name
