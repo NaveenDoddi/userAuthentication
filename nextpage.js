@@ -1,11 +1,11 @@
+console.log("tahnl")
 if(sessionStorage.getItem("token") == "home"){
     window.location.pathName = "nextpage.html"
    
 }else{
-    window.location.pathName = "index.html"
+    window.location.href = "index.html"
     console.log("thank u")
 }
-
 function load(){
     var userdata = JSON.parse(sessionStorage.getItem("user"))
     document.getElementById("welcome").innerText ="Welcome "+userdata.name+" !"
